@@ -264,7 +264,7 @@ class HandsOnInitiator(private val configuration: Configuration) {
                 "\n" +
                 "TODO - Provide introduction here" +
                 "\n" +
-                "[Source code on GitHub](https://github.com/kotlin-hands-on/${configuration.projectName}})\n"
+                "[Source code on GitHub](https://github.com/kotlin-hands-on/${configuration.projectName})\n"
     }
 
     private fun generateDescriptionContent(): String {
