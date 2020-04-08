@@ -8,6 +8,7 @@ class HandsOnInitiator(private val configuration: Configuration) {
         println("Folder for hands-on tutorial")
         fileIO.createFolder(configuration.pathHandsOn)
         fileIO.createFolder("${configuration.pathHandsOn}/${configuration.title}")
+        fileIO.createFolder("${configuration.pathHandsOn}/${configuration.title}/assets")
         println("Folder for associated project")
         fileIO.createFolder(configuration.pathProject)
         fileIO.createFolder("${configuration.pathProject}/${configuration.projectName}")
