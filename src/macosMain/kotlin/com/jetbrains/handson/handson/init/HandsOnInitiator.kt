@@ -251,12 +251,12 @@ class HandsOnInitiator(private val configuration: Configuration) {
 
     private fun generateREADMEContent(): String {
         return "[![official JetBrains project](https://jb.gg/badges/official.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)\n" +
-                "[![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)\n" +
+                "[![GitHub license](https://img.shields.io/badge/license-Apache%%20License%%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)\n" +
                 "\n" +
                 "\n" +
                 "# ${configuration.title}\n" +
                 "\n" +
-                "This repository is the code corresponding to the hands-on lab [${configuration.title}](https://play.kotlinlang.org/hands-on/${configuration.pathHandsOn.replace(" ", "%20")}/01_Introduction). \n"
+                "This repository is the code corresponding to the hands-on lab [${configuration.title}](https://play.kotlinlang.org/hands-on/${configuration.title.replace(" ", "%%20")}/01_Introduction). \n"
     }
 
     private fun generateIntroductionContent(): String {
