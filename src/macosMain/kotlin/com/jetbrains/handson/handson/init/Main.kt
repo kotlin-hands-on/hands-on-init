@@ -2,6 +2,7 @@ package com.jetbrains.handson.handson.init
 
 import kotlin.system.exitProcess
 
+
 fun hello(): String = "Hello, Kotlin/Native!"
 
 fun main(args: Array<String>) {

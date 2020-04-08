@@ -29,6 +29,9 @@ This is a Kotlin/Native project that targets macOS. To build it, simply run
 
 `gradle macosBinaries`
 
+## Binaries
+
+You can binaries on the [Releases](https://github.com/kotlin-hands-on/hands-on-init/releases) page.
 
 ## License 
 

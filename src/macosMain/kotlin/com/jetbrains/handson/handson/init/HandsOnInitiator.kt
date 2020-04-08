@@ -17,6 +17,7 @@ class HandsOnInitiator(private val configuration: Configuration) {
     fun createMarkdownFiles() {
         println("\nCreating markdown files...")
         println("Description file")
+
         fileIO.createFile("${configuration.pathHandsOn}/${configuration.title}/00_description.md", generateDescriptionContent())
         println("Introduction file")
         fileIO.createFile("${configuration.pathHandsOn}/${configuration.title}/01_introduction.md", generateIntroductionContent())
