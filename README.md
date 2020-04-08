@@ -23,6 +23,13 @@ Configure the parameters for your hands-on tutorial using a JSON configuration f
 It will create all the necessary files for you and all you need to do is to fill in some TODOs and push to GitHub. Of course, you'll
 also need to write the contents and projects! 
 
+## Building the project
+
+This is a Kotlin/Native project that targets macOS. To build it, simply run
+
+`gradle macosBinaries`
+
+
 ## License 
 
 Apache 2.0 
