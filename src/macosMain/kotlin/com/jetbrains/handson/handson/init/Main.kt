@@ -20,10 +20,7 @@ fun main(args: Array<String>) {
         handsOnInitiator.createLicenseFile()
         handsOnInitiator.createGitIngoreFile()
         handsOnInitiator.outputInstructions()
-    } catch (e: ConfigurationException) {
-        printErrorMessage(e)
-        exitProcess(-1)
-    } catch (e: HandsOnInitiatorException) {
+    } catch (e: Exception) {
         printErrorMessage(e)
         exitProcess(-1)
     }

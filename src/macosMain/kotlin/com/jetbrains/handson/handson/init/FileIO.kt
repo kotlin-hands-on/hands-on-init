@@ -30,7 +30,7 @@ class FileIO() {
 
     fun createFolder(folderName: String) {
         val result = mkdir(folderName, S_IRWXU)
-        if (result != 0 && result != EEXIST) {
+        if (result != 0 && result != -1) {
             throw FileIOException(errno)
         }
     }
