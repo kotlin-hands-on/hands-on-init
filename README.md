@@ -9,7 +9,7 @@ Hands-On tutorials.
 
 ## Usage
 
-Configure the parameters for your hands-on tutorial using a JSON configuration file with the following format
+Configure the parameters for your hands-on tutorial using a [JSON configuration file][config] with the following format:
 
 ```json
 {
@@ -20,20 +20,25 @@ Configure the parameters for your hands-on tutorial using a JSON configuration f
 }
 ``` 
 
-It will create all the necessary files for you and all you need to do is to fill in some TODOs and push to GitHub. Of course, you'll
-also need to write the contents and projects! 
+It will create all the necessary files for you and all you need to do is to fill in some TODOs and push to GitHub.
+Of course, you'll also need to write the contents and projects! 
 
 ## Building the project
 
-This is a Kotlin/Native project that targets macOS. To build it, simply run
+This is a Kotlin/Native project that targets macOS. To build it, simply run:
 
 `gradle macosBinaries`
 
+You'll need to have [XCode][xcode] application installed.
+
 ## Binaries
 
-You can binaries on the [Releases](https://github.com/kotlin-hands-on/hands-on-init/releases) page.
+You can find binaries on the [Releases][releases] page.
 
 ## License 
 
 Apache 2.0 
 
+[config]: ./src/macosMain/resources/config.json
+[releases]: https://github.com/kotlin-hands-on/hands-on-init/releases
+[xcode]: https://apps.apple.com/us/app/xcode/id497799835
