@@ -2,5 +2,15 @@
   "title": "Introduction to Ktor",
   "projectName": "introduction-to-ktor",
   "pathHandsOn": "./hands-on",
-  "pathProject": "./"
+  "pathProject": "./",
+  "pre": [
+    {
+      "text": "How to set up a project",
+      "link": "https://play.kotlinlang.org/hands-on/how-to"
+    },
+    {
+      "text": "How to start a server",
+      "link": "https://play.kotlinlang.org/hands-on/start-server"
+    }
+  ]
 }

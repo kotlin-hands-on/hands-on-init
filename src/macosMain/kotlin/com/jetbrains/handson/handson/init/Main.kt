@@ -10,7 +10,6 @@ fun main(args: Array<String>) {
         println("\n usage: hands-on-init {config.json}")
         exitProcess(-1)
     }
-
     val configurationFile = ConfigurationFile()
     try {
         val config = configurationFile.load(args[0])
@@ -18,7 +17,7 @@ fun main(args: Array<String>) {
         handsOnInitiator.createFolderStructure()
         handsOnInitiator.createMarkdownFiles()
         handsOnInitiator.createLicenseFile()
-        handsOnInitiator.createGitIngoreFile()
+        handsOnInitiator.createGitIgnoreFile()
         handsOnInitiator.outputInstructions()
     } catch (e: Exception) {
         printErrorMessage(e)

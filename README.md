@@ -16,7 +16,17 @@ Configure the parameters for your hands-on tutorial using a JSON configuration f
   "title": "Introduction to Ktor",
   "projectName": "introduction-to-ktor",
   "pathHandsOn": "./hands-on",
-  "pathProject": "./hands-on-project"
+  "pathProject": "./hands-on-project",
+  "pre": [
+    {
+      "text": "How to set up a project",
+      "link": "https://play.kotlinlang.org/hands-on/how-to"
+    },
+    {
+      "text": "How to start a server",
+      "link": "https://play.kotlinlang.org/hands-on/start-server"
+    }
+  ]
 }
 ``` 
 
@@ -36,4 +46,5 @@ You can binaries on the [Releases](https://github.com/kotlin-hands-on/hands-on-i
 ## License 
 
 Apache 2.0 
+
 

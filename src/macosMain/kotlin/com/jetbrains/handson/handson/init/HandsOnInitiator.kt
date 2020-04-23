@@ -1,5 +1,7 @@
 package com.jetbrains.handson.handson.init
 
+import kotlinx.serialization.PrimitiveKind
+
 class HandsOnInitiator(private val configuration: Configuration) {
     private val fileIO = FileIO()
 
@@ -30,7 +32,7 @@ class HandsOnInitiator(private val configuration: Configuration) {
         fileIO.createFile("${configuration.pathProject}/${configuration.projectName}/LICENSE", generateLicenseContent())
     }
 
-    fun createGitIngoreFile() {
+    fun createGitIgnoreFile() {
         println("\nCreating .gitignore file")
         fileIO.createFile("${configuration.pathProject}/${configuration.projectName}/.gitignore", generateGitIgnoreContent())
     }
@@ -259,8 +261,23 @@ class HandsOnInitiator(private val configuration: Configuration) {
                 "This repository is the code corresponding to the hands-on lab [${configuration.title}](https://play.kotlinlang.org/hands-on/${configuration.title.replace(" ", "%%20")}/01_Introduction). \n"
     }
 
+    private fun generatePrerequisites(): String {
+        var topics = ""
+        configuration.pre.forEach {
+            topics += "* [${it.text}](${it.link})\n"
+        }
+
+        return "This tutorial assumes that you're already familiar with the following topics:\n" +
+                "\n" +
+                topics +
+                "\n"
+    }
+
     private fun generateIntroductionContent(): String {
+        val prereq = generatePrerequisites()
         return "# Introduction\n" +
+                "\n" +
+                prereq +
                 "\n" +
                 "TODO - Provide introduction here" +
                 "\n" +
