@@ -264,7 +264,7 @@ class HandsOnInitiator(private val configuration: Configuration) {
     private fun generatePrerequisites(): String {
         var topics = ""
         configuration.pre.forEach {
-            topics += "* [${it.text}](${it.link})\n"
+            topics += "* [${it.text}](${it.link.replace("%20", "%%20").replace(" ", "%%20")})\n"
         }
 
         return "This tutorial assumes that you're already familiar with the following topics:\n" +
